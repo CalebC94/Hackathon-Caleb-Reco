@@ -18,7 +18,6 @@
               <folding>
                 <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#3736#3743#1" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,7 +64,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="448" />
     <option name="y" value="184" />
     <option name="width" value="790" />
@@ -129,7 +128,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="448" y="184" width="790" height="616" extended-state="0" />
+    <frame x="448" y="184" width="790" height="616" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
@@ -188,7 +187,6 @@
           <folding>
             <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#3736#3743#1" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
