@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="library" name="anime" level="application" />
+=======
+>>>>>>> c325749a4d2242ce867077f3fa9df747159d92c0
   </component>
 </module>
