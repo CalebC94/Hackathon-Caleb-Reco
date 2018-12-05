@@ -1,5 +1,8 @@
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("CodeCrew_Logo.png");
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -55,7 +58,7 @@ span.psw {
 }
 
 /* The Modal (background) */
-.modal {
+.model {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -70,7 +73,7 @@ span.psw {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.model-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
@@ -85,6 +88,14 @@ span.psw {
     color: #000;
     font-size: 35px;
     font-weight: bold;
+}
+.sign-btn{
+    background-color: #4CAF50;
+    color: #1913ff;
+    margin: 8px 0;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
 }
 
 .close:hover,

@@ -2,24 +2,31 @@
 <html>
 
 <body>
+<link rel="stylesheet" href="style.css">
 
-<h2>Modal Login Form</h2>
+<h2>Welcome to the grade tracker</h2>
+<!--<button><a href="SignIn.html">Sign Up</a></button>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<form>
+    <input class="sign-btn" onclick="window.location.href='SignIn.html'" type="button" value="Sign In" />
+</form>
+
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-<div id="id01" class="modal">
+<div id="id01" class="model">
 
-    <form class="modal-content animate" action="/action_page.php">
+    <form class="model-content animate" >
         <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            <img src="photo-1531297484001-80022131f5a1.jpeg"  alt="Avatar" class="avatar">
         </div>
 
         <div class="container">
-            <label for="uname"><b>Username</b></label>
+            <b>Username</b>
             <input type="text" placeholder="Enter Username" name="uname" required>
 
-            <label for="psw"><b>Password</b></label>
+           <b>Password</b>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
             <button type="submit">Login</button>
@@ -34,14 +41,14 @@
 
 <script>
     // Get the modal
-    var modal = document.getElementById('id01');
+    // var model = document.getElementById('id01')
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    // window.onclick = function(event) {
+    //     if (event.target == model) {
+    //         model.style.display = "none";
+    //     }
+
 </script>
 
 </body>
