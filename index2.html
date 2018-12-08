@@ -31,11 +31,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">CONTACT US</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Reflection
-                            </a>
+                        <li class="nav-item ">
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="vision.html">VISION</a>
                             </div>
@@ -56,94 +52,26 @@
 
 </nav>
 <!--<section class="site-hero" style="background-image: url(images/CodeCrew_Logo.png)"; id="section-home" data-stellar-background-ratio="1.5">-->
-<style>
 
-
-    *{
-        margin: 0%;
-        padding: 0%;
-    }
-    body{
-        background-color: blue;
-    }
-    .text-animation{
-        list-style: none;
-        position: static;
-        left: 50%;
-        top:50%;
-
-        transform: translateX(-5%) translateY(-20%);
-
-    }
-    .text-animation li{
-        display: inline-flex;
-        margin-right: 5px;
-        font-family: sans-serif;
-        font-weight: 100;
-        font-size: 5em;
-        opacity: 1;
-        transition: all 2.0s ease;
-    }
-    .text-animation li:last-child{
-        margin-right: 0;
-    }
-    .text-animation.hidden{
-        opacity: 0;
-    }
-    .text-animation.hidden li:nth-child(1){transform: translateX(-200px) translateY(-200px);}
-    .text-animation.hidden li:nth-child(2){transform: translateX(20px) translateY(100px);}
-    .text-animation.hidden li:nth-child(3){transform: translateX(-150px) translateY(-80px);}
-    .text-animation.hidden li:nth-child(4){transform: translateX(10px) translateY(-200px);}
-    .text-animation.hidden li:nth-child(5){transform: translateX(-300px) translateY(200px);}
-    .text-animation.hidden li:nth-child(6){transform: translateX(20px) translateY(-20px);}
-    .text-animation.hidden li:nth-child(7){transform: translateX(30px) translateY(200px);}
-    .text-animation.hidden li:nth-child(8){transform: translateX(-200px) translateY(-200px);}
-    .text-animation.hidden li:nth-child(9){transform: translateX(20px) translateY(100px);}
-    .text-animation.hidden li:nth-child(10){transform: translateX(-150px) translateY(-80px);}
-    .text-animation.hidden li:nth-child(11){transform: translateX(10px) translateY(-200px);}
-    .text-animation.hidden li:nth-child(12){transform: translateX(-300px) translateY(-200px);}
-    .text-animation.hidden li:nth-child(13){transform: translateX(-200px) translateY(-200px);}
-    .text-animation.hidden li:nth-child(14){transform: translateX(20px) translateY(100px);}
-    .text-animation.hidden li:nth-child(15){transform: translateX(-150px) translateY(-80px);}
-    .text-animation.hidden li:nth-child(16){transform: translateX(10px) translateY(-200px);}
-    .text-animation.hidden li:nth-child(17){transform: translateX(-300px) translateY(200px);}
-    .text-animation.hidden li:nth-child(18){transform: translateX(20px) translateY(-20px);}
-    .text-animation.hidden li:nth-child(19){transform: translateX(30px) translateY(200px);}
-    .text-animation.hidden li:nth-child(20){transform: translateX(-200px) translateY(-200px);}
-    .text-animation.hidden li:nth-child(21){transform: translateX(20px) translateY(100px);}
-
-
-</style>
 
 
 
     <div class="container">
         <div class="row intro-text align-items-center justify-content-center">
             <div class="col-md-10 text-center">
-            <ul class="text-animation hidden">
-                <li>W</li>
-                <li>E</li>
-                <li>L</li>
-                <li>C</li>
-                <li>O</li>
-                <li>M</li>
-                <li>E</li>
-                <li> </li>
-                <li>T</li>
-                <li>O</li>
-                <li></li>
-                <li>C</li>
-                <li>O</li>
-                <li>D</li>
-                <li>E</li>
-                <li>S</li>
-                <li>C</li>
-                <li>H</li>
-                <li>O</li>
-                <li>O</li>
-                <li>L</li>
-            </ul>
+                <h1 class="ml2">Welcome To CodeCrew</h1>
+             <!--<img src="images/CodeCrew_Logo.png">-->
+                <button><a href="about.html" >Learn More</a></button>
 
+
+
+
+
+
+
+
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                         crossorigin="anonymous"></script>
@@ -155,10 +83,28 @@
                         crossorigin="anonymous"></script>
 
                 <script type="text/javascript">
-                    $(function () {
-                        setTimeout(function () {
-                            $('.text-animation').removeClass('hidden');
-                        }, 500);
+                    // Wrap every letter in a span
+                    $('.ml2').each(function(){
+                        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+                    });
+
+                    anime.timeline({loop: true})
+                        .add({
+                            targets: '.ml2 .letter',
+                            scale: [4,1],
+                            opacity: [0,1],
+                            translateZ: 0,
+                            easing: "easeOutExpo",
+                            duration: 950,
+                            delay: function(el, i) {
+                                return 70*i;
+                            }
+                        }).add({
+                        targets: '.ml2',
+                        opacity: 0,
+                        duration: 1000,
+                        easing: "easeOutExpo",
+                        delay: 1000
                     });
                 </script>
 
